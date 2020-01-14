@@ -7,8 +7,74 @@
 html {
   font-size: 12px;
   background: url(https://images.wallpaperscraft.com/image/clock_time_dial_saying_sage_11128_1920x1200.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-size: 100% 100%;
   height: 100vh;
+}
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.clock {
+  background-color: rgba(0, 0, 0, 0.274);
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid rgb(25, 80, 73);
+  border-radius: 50%;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px rgba(239, 239, 239, 0.623), inset 0 0 10px black,
+    0 0 10px rgba(0, 0, 0, 0.2);
+}
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* account for the height of the clock hands */
+}
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+#time12 {
+  position: relative;
+  z-index: 1;
+  left: 145px;
+  top: 22px;
+}
+#time6 {
+  position: relative;
+  z-index: 1;
+  left: 169px;
+  bottom: 23px;
+}
+
+#time9 {
+  position: relative;
+  z-index: 1;
+  left: 5px;
+  top: 195px;
+}
+#time3 {
+  position: relative;
+  z-index: 1;
+  left: 327px;
+  bottom: 193px;
+}
+
+span {
+  color: rgba(240, 248, 255, 0.658);
+  font-size: 1.8rem;
 }
