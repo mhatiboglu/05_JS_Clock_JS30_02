@@ -51,16 +51,16 @@ body {
 
 .second-hand {
   height: 4px;
-  background-color: rgb(12, 12, 10);
+  background-color: rgb(255, 255, 255);
 }
 .min-hand {
-  background-color: rgba(12, 12, 10, 0.651);
+  background-color: rgba(255, 255, 255, 0.562);
   height: 6px;
   width: 110px;
   left: 26px;
 }
 .hour-hand {
-  background-color: rgba(5, 5, 5, 0.733);
+  background-color: rgba(248, 242, 242, 0.733);
   height: 8px;
   width: 90px;
   left: 45px;
